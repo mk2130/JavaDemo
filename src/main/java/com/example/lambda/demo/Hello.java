@@ -6,7 +6,8 @@ import com.amazonaws.services.lambda.runtime.RequestHandler;
 public class Hello implements RequestHandler<String, String> {
 
 	@Override
-	public String handleRequest(String input,String input1) {
+	public String handleRequest(String input, Context context) {
+	  context.getLogger().log("Input: " + input);
 	  String output = "Hello, " + input + "!";
 	  return output;
 	}

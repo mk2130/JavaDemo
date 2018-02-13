@@ -6,6 +6,7 @@ phases:
       - echo Build completed on `date`
       - mvn package
 artifacts:
+  type: jar
   files:
-    - target/helloWorld.jar
+    -helloWorld.jar
   discard-paths: yes
