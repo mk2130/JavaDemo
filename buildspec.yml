@@ -9,5 +9,5 @@ phases:
 artifacts:
   type: jar
   files:
-    - target/JavaDemo.jar
+    - '**/*'
   discard-paths: yes
