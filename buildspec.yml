@@ -4,7 +4,7 @@ phases:
   post_build:
     commands:
       - echo Build completed on `date`
-      - mvn package
+      - mvn clean package --template-file samTemplate.yaml --s3-bucket demo-pipeline-1 --output-template-file NewSamTemplate.yaml
 artifacts:
   type: jar
   files:
