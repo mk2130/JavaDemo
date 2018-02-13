@@ -7,5 +7,5 @@ phases:
       - mvn package
 artifacts:
   files:
-    - target/helloWorld.war
+    - target/helloWorld.jar
   discard-paths: yes
