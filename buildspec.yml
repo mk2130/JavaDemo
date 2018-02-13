@@ -9,5 +9,5 @@ phases:
 artifacts:
   type: jar
   files:
-    - '**/*'
+    - NewSamTemplate.yaml
   discard-paths: yes
