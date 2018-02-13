@@ -7,7 +7,7 @@ Resources:
     Properties:
       Handler: 'com.example.lambda.demo.Hello::handleRequest'
       Runtime: java8
-      CodeUri: s3://codepipeline-us-east-1-174632319992/JavaPipeline/MyAppBuild/demo-1.0.0.jar
+      CodeUri: ./
       Events:
         MyJavaApi:
           Type: Api
