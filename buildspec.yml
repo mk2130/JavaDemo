@@ -4,7 +4,7 @@ phases:
     commands:
       - echo Build completed on `date`
       - mvn clean package
-      - aws cloudformation package --template-file samTemplate.yaml --s3-bucket codepipeline-us-east-1-174632319992/JavaPipeline/MyAppBuild --output-template NewSamTemplate.yaml
+      - aws cloudformation package --template-file samTemplate.yaml --s3-bucket codepipeline-us-east-1-174632319992 --output-template NewSamTemplate.yaml
 
 artifacts:
   type: jar
