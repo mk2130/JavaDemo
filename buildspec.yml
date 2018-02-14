@@ -1,0 +1,15 @@
+version: 0.2
+
+phases:
+  post_build:
+    commands:
+      - echo Build completed on `date`
+      - mvn clean package
+      - aws cloudformation package --template-file samTemplate.yaml --s3-bucket demo5550 --output-template NewSamTemplate.yaml
+
+artifacts:
+  type: jar
+  files:
+    - '**/*'
+    - NewSamTemplate.yaml
+  discard-paths: yes

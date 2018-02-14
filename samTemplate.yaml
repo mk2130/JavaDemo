@@ -1,0 +1,16 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: Helle world function
+Resources:
+  TimeFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: 'com.example.lambda.demo.Hello::handleRequest'
+      Runtime: java8
+      CodeUri: s3://codepipeline-us-east-1-174632319992/JavaPipeline/MyAppBuild
+      Events:
+        MyJavaApi:
+          Type: Api
+          Properties:
+            Path: /HelloWorld
+            Method: GET
