@@ -10,3 +10,4 @@ artifacts:
   type: jar
   files:
     - NewSamTemplate.yaml
+    - target/lambda-1.0.jar
