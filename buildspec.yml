@@ -4,7 +4,7 @@ phases:
     commands:
       - echo Build completed on `date`
       - mvn clean package
-      - aws cloudformation package --template-file samTemplate.yaml --s3-bucket codepipeline-us-east-1-174632319992 --output-template NewSamTemplate.yaml
+      - aws cloudformation package --template-file samTemplate.yaml --kms-key-id arn:aws:kms:us-east-1:491398371152:key/aa8461d2-467d-431a-a544-9b0620f276ec --s3-bucket codepipeline-us-east-1-174632319992 --output-template NewSamTemplate.yaml
 
 artifacts:
   type: jar
