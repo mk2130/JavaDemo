@@ -16,6 +16,7 @@
         <configuration>
           <source>1.8</source>
           <target>1.8</target>
+           <outputDirectory>./</outputDirectory>
           <encoding>UTF-8</encoding>
           <forceJavacCompilerUse>true</forceJavacCompilerUse>
         </configuration>
@@ -40,7 +41,7 @@
     <dependency>
       <groupId>com.amazonaws</groupId>
       <artifactId>aws-lambda-java-events</artifactId>
-      <version>1.3.0</version>
+      <version>1.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.amazonaws</groupId>
