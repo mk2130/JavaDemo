@@ -5,6 +5,7 @@ Resources:
   HelloFunction:
     Type: AWS::Serverless::Function
     Properties:
+      FunctionName: 'uniqueFunction'
       Handler: 'com.example.lambda.demo.Hello::handleRequest'
       Runtime: java8
       CodeUri: ./
