@@ -6,8 +6,8 @@ phases:
       - mvn clean package
       - mv target/classes/* .
       - rm -rf target src buildspec.yml pom.xml
-      - aws cloudformation package --template-file samTemplate.yaml --s3-bucket codepipeline-us-east-1-432104467414 --kms-key-id arn:aws:kms:us-east-1:491398371152:key/aa8461d2-467d-431a-a544-9b0620f276ec --output-template NewSamTemplate.yaml
-
+      - aws cloudformation package --template-file samTemplate.yaml --kms-key-id arn:aws:kms:us-east-1:421775237038:key/d91b925c-8a3b-400c-ae49-9122b1f7b85e --s3-bucket codepipeline-us-east-1-432104467414 --output-template NewSamTemplate.yaml
+      
 artifacts:
   type: jar
   files:
