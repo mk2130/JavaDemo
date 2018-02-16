@@ -2,7 +2,6 @@ version: 0.2
 phases:
   post_build:
     commands:
-      - echo Build completed on `date`
       - mvn clean package
       - mv target/classes/* .
       - rm -rf target src buildspec.yml pom.xml
