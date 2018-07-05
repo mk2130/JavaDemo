@@ -8,7 +8,7 @@ Resources:
       FunctionName: 'uniqueFunction'
       Handler: 'com.example.lambda.demo.Hello::handleRequest'
       Runtime: java8
-      CodeUri: ./
+      CodeUri: target/lambda-1.0.jar
       Events:
         MyJavaApi:
           Type: Api
